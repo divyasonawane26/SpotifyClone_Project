@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Spotify - Web Player: Music for Everyone</title>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/logo.png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="main">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <nav class="nav">
+        <div class="nav-option active">
+          <i class="fa-solid fa-house" aria-hidden="true"></i>
+          <a href="#">Home</a>
+        </div>
+        <div class="nav-option">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          <a href="#">Search</a>
+        </div>
+      </nav>
+
+      <section class="library" aria-label="Your Library">
+        <div class="option">
+          <div class="lib-option nav-option">
+            <img src="assets/library_icon.png" alt="Library" />
+            <a href="#">Your Library</a>
+          </div>
+          <div class="icons">
+            <i class="fa-solid fa-plus" aria-label="Create new"></i>
+            <i class="fa-solid fa-arrow-right" aria-label="Expand"></i>
+          </div>
+        </div>
+
+        <div class="lib-box">
+          <div class="box">
+            <p class="box-p1">Create your first playlist</p>
+            <p class="box-p2">It's easy, we'll help you</p>
+            <button class="badge" type="button">Create playlist</button>
+          </div>
+          <div class="box">
+            <p class="box-p1">Find some podcasts to follow</p>
+            <p class="box-p2">We'll keep you updated on new episodes</p>
+            <button class="badge" type="button">Browse podcasts</button>
+          </div>
+        </div>
+      </section>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Sticky nav -->
+      <div class="sticky-nav">
+        <div class="sticky-nav-icons">
+          <img src="assets/backward_icon.png" alt="Go back" />
+          <img src="assets/forward_icon.png" alt="Go forward" class="hide" />
+        </div>
+        <div class="sticky-nav-option">
+          <button class="badge nav-item hide" type="button">Explore Premium</button>
+          <button class="badge nav-item dark-badge" type="button">
+            <i class="fa-regular fa-circle-down" aria-hidden="true"></i>
+            <span>Install App</span>
+          </button>
+          <i class="fa-regular fa-user nav-item" aria-label="Profile"></i>
+        </div>
+      </div>
+
+      <!-- Recently Played -->
+      <h1>Recently Played</h1>
+      <div class="cards-container">
+        <div class="card">
+          <img src="assets/divine.jpeg" class="card-img" alt="DIVINE artist cover" />
+          <p class="card-title">DIVINE</p>
+          <p class="card-info">Artist</p>
+        </div>
+
+        <div class="card">
+          <img src="assets/streetdreams.jpeg" class="card-img" alt="Street Dreams by DIVINE & Karan Aujla" />
+          <p class="card-title">Street Dreams</p>
+          <p class="card-info">2024 · DIVINE, Karan Aujla</p>
+        </div>
+
+        <div class="card">
+          <img src="assets/kohinoor.jpeg" class="card-img" alt="Kohinoor album cover" />
+          <p class="card-title">Kohinoor</p>
+          <p class="card-info">2019 · Album</p>
+        </div>
+
+        <div class="card">
+          <img src="assets/Gunehgar.jpeg" class="card-img" alt="Gunehgar album cover" />
+          <p class="card-title">Gunehgar</p>
+          <p class="card-info">2022 · Album</p>
+        </div>
+
+        <div class="card">
+          <img src="assets/punyapaap.jpeg" class="card-img" alt="Punya Paap album cover" />
+          <p class="card-title">Punya Paap</p>
+          <p class="card-info">2020 · Album</p>
+        </div>
+      </div>
+
+      <!-- Trending Now Near You -->
+      <h2>Trending Now Near You</h2>
+      <div class="cards-container">
+        <div class="card">
+          <img src="assets/shubh.jpeg" class="card-img" alt="Shubh album cover" />
+          <p class="card-title">Shubh</p>
+          <p class="card-info">Album</p>
+        </div>
+        <div class="card">
+          <img src="assets/yoyo.jpeg" class="card-img" alt="Desi Kalakar by Yo Yo Honey Singh" />
+          <p class="card-title">Desi Kalakar</p>
+          <p class="card-info">Yo Yo Honey Singh</p>
+        </div>
+        <div class="card">
+          <img src="assets/sambata.jpeg" class="card-img" alt="Vazan - Red Bull 64 Bars by Sambata" />
+          <p class="card-title">Vazan - Red Bull 64 Bars</p>
+          <p class="card-info">Sambata</p>
+        </div>
+         <div class="card">
+          <img src="assets/krishna.jpeg" class="card-img" alt="I guess by Krishna" />
+          <p class="card-title">Kri$hna</p>
+          <p class="card-info">Album</p>
+        </div>
+        <div class="card">
+          <img src="assets/karanAujla.jpeg" class="card-img" alt="Karan Aujla Wavy cover" />
+          <p class="card-title">Karan Aujla</p>
+          <p class="card-info">Album</p>
+        </div>
+      </div>
+
+      <!-- Your Favourite Artist -->
+      <h2>Your Favourite Artist</h2>
+      <div class="cards-container">
+        <div class="card">
+          <img src="assets/para.jpeg" class="card-img" alt="Mileya Ni by Paradox" />
+          <p class="card-title">Mileya Ni</p>
+          <p class="card-info">Paradox</p>
+        </div>
+        <div class="card">
+          <img src="assets/raga.jpeg" class="card-img" alt="Galat Karam by RAGA" />
+          <p class="card-title">RAGA</p>
+          <p class="card-info">Album</p>
+        </div>
+        <div class="card">
+          <img src="assets/love.jpeg" class="card-img" alt="REGRETS by Talha Anjum" />
+          <p class="card-title">One Love</p>
+          <p class="card-info">shubh</p>
+        </div>
+        <div class="card">
+          <img src="assets/naamS.jpeg" class="card-img" alt="Hustle by Naam Sujal" />
+          <p class="card-title">Vishay Khatam-Hustle</p>
+          <p class="card-info">Naam Sujal</p>
+        </div>
+        <div class="card">
+          <img src="assets/99side.jpeg" class="card-img" alt="Hustle by 99side" />
+          <p class="card-title">Main Hu Don-Hustle</p>
+          <p class="card-info">99side</p>
+        </div>
+      </div>
+
+      <!-- Featured Charts -->
+      <h2>Featured Charts</h2>
+      <div class="cards-container">
+        <div class="card">
+          <img src="assets/card5img.jpeg" class="card-img" alt="Top Songs Global playlist cover" />
+          <p class="card-title">Top Songs - Global</p>
+          <p class="card-info">Your weekly updates of the most played...</p>
+        </div>
+        <div class="card">
+          <img src="assets/card6img.jpeg" class="card-img" alt="Top Songs India playlist cover" />
+          <p class="card-title">Top Songs - India</p>
+          <p class="card-info">Your weekly updates of the most played...</p>
+        </div>
+        <div class="card">
+          <img src="assets/card1img.jpeg" class="card-img" alt="Top 50 Global playlist cover" />
+          <p class="card-title">Top 50 - Global</p>
+          <p class="card-info">Your daily updates of the most played...</p>
+        </div>
+      </div>
+
+      <!-- Best of Artist -->
+      <h2>Best of Artist</h2>
+      <div class="cards-container">
+        <div class="card">
+          <img src="assets/aleemrk.jpeg" class="card-img" alt="cold hours by aleemrk" />
+          <p class="card-title">cold hours</p>
+          <p class="card-info">aleemrk</p>
+        </div>
+        <div class="card">
+          <img src="assets/kaam25.jpeg" class="card-img" alt="Kaam 25 by DIVINE" />
+          <p class="card-title">Kaam 25</p>
+          <p class="card-info">DIVINE</p>
+        </div>
+        <div class="card">
+          <img src="assets/talha.jpeg" class="card-img" alt="Afsanay by Talha Anjum" />
+          <p class="card-title">Talha Anjum</p>
+          <p class="card-info">Artist</p>
+        </div>
+        <div class="card">
+          <img src="assets/seedhemaut.jpeg" class="card-img" alt="Hola Amigo by Krishna & Seedhe Maut" />
+          <p class="card-title">Seedhe Maut</p>
+          <p class="card-info">Album</p>
+        </div>
+        <div class="card">
+          <img src="assets/fandry.jpeg" class="card-img" alt="Tuzya priticha by Ajay-Atul" />
+          <p class="card-title">Tuzya priticha..</p>
+          <p class="card-info">Ajay-Atul</p>
+        </div>
+      </div>
+
+      <!-- Footer line -->
+      <footer class="footer" aria-hidden="true">
+        <div class="line"></div>
+      </footer>
+    </main>
+
+    <!-- Music Player -->
+    <div class="music-player" role="region" aria-label="Player controls">
+      <div class="album">
+        <div class="album-photo">
+          <img src="assets/chalmumbai.jpg" alt="Daylight cover art" />
+          <div class="album-name">
+            <p class="album-title">Chal Bombay</p>
+            <p class="album-info">DIVINE</p>
+          </div>
+        </div>
+        <div class="album-icon">
+          <img src="assets/album_icon1.png" alt="Like" />
+          <img src="assets/album_icon2.png" alt="Picture-in-picture" />
+        </div>
+      </div>
+
+      <div class="player">
+        <div class="player-controls">
+          <img src="assets/player_icon1.png" class="player-controls-icon" alt="Shuffle" />
+          <img src="assets/player_icon2.png" class="player-controls-icon" alt="Previous" />
+          <img src="assets/player_icon3.png" class="player-controls-icon" alt="Play" />
+          <img src="assets/player_icon4.png" class="player-controls-icon" alt="Next" />
+          <img src="assets/player_icon5.png" class="player-controls-icon" alt="Repeat" />
+        </div>
+        <div class="playback-bar">
+          <span class="curr-time" aria-live="polite">00:00</span>
+          <input type="range" min="0" max="100" step="1" class="progress-bar" aria-label="Track progress" />
+          <span class="curr-time" aria-live="polite">03:33</span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <img src="assets/controls_icon1.png" alt="Lyrics" />
+        <img src="assets/controld_icon2.png"alt="Queue" />
+        <img src="assets/controls_icon3.png" class="controls-icon2" alt="Connect to device" />
+        <img src="assets/controls_icon4.png" class="controls-icon1" alt="Mute" />
+        <img src="assets/controls_icon5.png" alt="Volume" />
+        <input type="range" min="0" max="100" step="10" class="controls-range progress-bar" aria-label="Volume" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>
